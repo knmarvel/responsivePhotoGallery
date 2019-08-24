@@ -1,0 +1,159 @@
+:root   {
+    --operations: #c1c739;
+    --command: #a71313;
+    --science: #2b53a7;
+    --space: #000;
+    --interior: #d6a444;
+}
+
+@font-face {
+    font-family: 'star_trek_tng-titleregular';
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.ttf') format('ttf');
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.woff2') format('woff2');
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'trek_tng_monitorsregular';
+    src: url('fonts/trek_tng_monitors-webfont.woff2') format('woff2'),
+         url('fonts/trek_tng_monitors-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'jefferiesextended';
+    src: url('fonts/jeffe___-webfont.woff2') format('woff2'),
+         url('fonts/jeffe___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--operations)
+}
+
+    body    {
+        background-color: var(--space);
+        font-family: 'jefferiesextended';
+        display:flex;
+        flex-direction: column;
+    }
+    /*header nonsense*/
+    header   {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-end;
+        align-content: flex-end;
+        height: 10em;
+    }
+
+    #lefthead   {
+        width: 57%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: bottom;
+        background-color: var(--operations);
+        border-radius: 25px 5px 0px 0px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #righthead  {
+        width: 5%;
+        height: 100%;
+        background-color: var(--operations);
+        border-radius: 5px 5px 0px 0px;
+        color: transparent;
+    }
+
+    h1  {
+        font-family: 'star_trek_tng-titleregular';
+        width: 38%;
+        color: var(--interior);
+        font-size: 7vw;
+        font-size: 7vh;
+        font-size: 7vmin;
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+        border: 0;
+    }
+    /*maincontent*/
+    #allyourbase    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    aside{
+        margin: .3em, 0, .3em, 0;
+        background: var(--science);
+        color: #FFFFFF;
+        padding-left: .3em;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    #pictures   {
+        -webkit-column-count: 2;
+        -webkit-column-gap:15px;
+        -moz-column-count: 2;
+        -moz-column-gap:15px;
+        column-count: 2;
+        column-gap: 15px;
+    }
+
+    .pic    {
+        padding: 3px;
+        border: 5px solid;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+    }
+
+    .image  {
+        width: 45vw;
+    }
+
+
+    .caption    {
+        color: var(--interior);
+        justify-items: flex-end;
+    }
+
+  .pic:nth-child(3n)    {
+        border-color: var(--command)
+    }
+
+ .pic:nth-child(3n+1) {
+        border-color: var(--science);
+    }
+    
+ .pic:nth-child(3n+2) {
+        border-color: var(--operations);
+    }
+    
+
+
+@media (min-width: 480px) {
+*   {
+    margin:0;
+    padding: 0;
+}
+
+}
+footer  {
+    background-color: var(--science);
+    font-family: 'jefferiesextended';
+    height: 2%;
+
+}
+

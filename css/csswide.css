@@ -1,0 +1,144 @@
+:root   {
+    --operations: #c1c739;
+    --command: #a71313;
+    --science: #2b53a7;
+    --space: #000;
+    --interior: #d6a444;
+}
+
+@font-face {
+    font-family: 'star_trek_tng-titleregular';
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.ttf') format('ttf');
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.woff2') format('woff2');
+    src: url('fonts/ufonts.com_star-trek-tng-title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'trek_tng_monitorsregular';
+    src: url('fonts/trek_tng_monitors-webfont.woff2') format('woff2'),
+         url('fonts/trek_tng_monitors-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'jefferiesextended';
+    src: url('fonts/jeffe___-webfont.woff2') format('woff2'),
+         url('fonts/jeffe___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body    {
+    background-color: var(--space);
+    color: var(--operations);
+}
+
+
+
+#layout2    {
+    display: flex;
+    flex-direction: row;
+}
+
+#pictures   {
+    -webkit-column-count: 3;
+    -webkit-column-gap:15px;
+    -moz-column-count: 3;
+    -moz-column-gap:15px;
+    column-count: 3;
+    column-gap: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    font-family:'star_trek_tng-titleregular';
+}
+
+#lefthead   {
+    width: 100%;
+    height: 2%;
+    background-color: var(--interior);
+    border-radius: 25px 5px 0px 0px;
+    margin: .1% .1% .1% .1%;
+}
+
+#righthead  {
+    width: 100%;
+    height: 90%;
+    background-color: var(--interior);
+    border-radius: 0px 0px 5px 25px;
+    margin: .1% .1% .1% .1%;
+}
+
+aside   {
+    background-color: var(--science);
+    color: var(--space);
+    margin: .1% .5% .1% .5%;
+    font-family: 'trek_tng_monitorsregular';
+    font-size: 2em;
+    height: 2%;
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.pic    {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 2px;
+    
+
+}
+.pic:nth-child(3n)  {
+    border-color: var(--command);
+}
+.pic:nth-child(3n+1)  {
+    border-color: var(--science);
+}
+.pic:nth-child(3n+2)  {
+    border-color: var(--operations);
+}
+
+.image  {
+    align-self: center;
+    width: 256px;
+    padding: 0;
+    margin: 0;
+}
+
+.caption    {
+    font-family: 'jefferiesextended';
+    width: 256px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+footer  {
+    background-color: var(--science);
+    font-family: 'jefferiesextended';
+    color: var(--space);
+    height: 2%;
+    margin: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--operations);
+}
